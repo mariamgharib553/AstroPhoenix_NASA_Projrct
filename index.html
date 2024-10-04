@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/Kasper.css" />
+    <link rel="stylesheet" href="CSS/normalizing.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400..700;1,300..800&display=swap" />
+    <title>Kasper | Template_2</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Images/Logos/L4.png" width="200px" alt="logo" />
+            </div>
+            <nav>
+                <div class="logo">
+                    <i class="fa-solid fa-bars" style="color: #fff; font-size: 30px"></i>
+                </div>
+                <ul>
+                    <li><a href="#Home" class="active">Home</a></li>
+                    <li><a href="#Our-Games">Games</a></li>
+                    <li><a href="#Team-Challenges">Solo Challenges</a></li>
+                    <li><a href="#Our-Skills">Team Challenges</a></li>
+                    <li><a href="#footer">About</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="Home">
+        <!-- <div class="overlay"></div> -->
+        <div class="text">
+            <div class="content">
+                
+                <h1>
+                    Welcome to<br />
+                    AstroPhoenix Space Agency
+                </h1>
+                <p>
+                    Explore fun, physical games designed for astronauts and space enthusiasts.
+                    Our games promote teamwork, fitness, and mental sharpness in confined or space environments.
+                    Stay active and engaged—let the adventure begin!
+                </p>
+            </div>
+        </div>
+        <div onclick="switchingDownPage()" class="fa-solid fa-angle-left"></div>
+        <div onclick="switchingUpPage()" class="fa-solid fa-angle-right"></div>
+        <ul class="bullets">
+            <li onclick="ImageClick(0)" class="active" style="left: -80px"></li>
+            <li onclick="ImageClick(1)" style="left: -40px"></li>
+            <li onclick="ImageClick(2)" style="left: 0"></li>
+            <li onclick="ImageClick(3)" style="left: 40px"></li>
+            <li onclick="ImageClick(4 )" style="left: 80px"></li>
+        </ul>
+    </div>
+
+    <!--/////////////////// games ////////////////////-->
+    <div id="Our-Games">
+        <div class="main-heading">
+            <h2>our games</h2>
+            <p>
+                Discover a collection of fun, physical games designed to boost teamwork,
+                fitness, and mental agility in confined or space environments.
+            </p>
+            <!-- <span>Click on <a href="games.html">See more</a> to explore how to play!</span> -->
+        </div>
+        <div class="containerG">
+            <div class="slide">
+                <div class="item" style="background-image: url(Images/blue.png);">
+                    <div class="contentG">
+                        <div class="name">Switzerland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/bink.jpeg);">
+                    <div class="contentG">
+                        <div class="name">Puzzle Space</div>
+                        <div class="des">Discover the diffrent Puzzle through the spiaceship</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/purple.jpeg);">
+                    <div class="contentG">
+                        <div class="name">Fit Each </div>
+                        <div class="des">Space Themed Memory Card playing </div>
+                        <button><a href="./memory-card-game-main/index.html">Play Now</a></button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/wp3549816.jpg);">
+                    <div class="contentG">
+                        <div class="name">Memory Ball Challenge</div>
+                        <div class="des">Astronauts challenges their memory </div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/pink-solid-color-light-wallpaper-thumb.jpg);">
+                    <div class="contentG">
+                        <div class="name">Netherland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(Images/blue-background.jpg);">
+                    <div class="contentG">
+                        <div class="name">Ireland</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonG">
+                <button title="arrow" class="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <button title="arrow" class="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="Team-Challenges">
+        <div class="container">
+            <div class="main-heading">
+                <h2>Solo Challenges</h2>
+                <p>
+                    Discover engaging challenges designed to challenge your mind and body.
+                </p>
+            </div>
+            <!-- <ul class="shuffle-list">
+                <li>All</li>
+                <li class="active">App</li>
+                <li>Photo</li>
+                <li>Web</li>
+                <li>Print</li>
+            </ul> -->
+        </div>
+        <div class="imgs" id="image-gallery"></div>
+        <div class="more" onclick="showMore()">more</div>
+    </div>
+    <div id="Video">
+        <video src="Images/MyPhotos/9440173-hd_1920_1080_24fps.mp4" autoplay muted loop></video>
+        <div class="text">
+            <h2>Super Awesome Video Here</h2>
+            <p>Its All You Need</p>
+            <button>Play Now</button>
+        </div>
+    </div>
+    <div id="Our-Skills">
+        <div class="main-heading">
+            <h2>Team Challenges</h2>
+            <p>
+                Discover engaging challenges designed to challenge your mind and body.
+            </p>
+        </div>
+        <div class="cardsContainer">
+            <div class="card left"></div>
+            <div class="card right"></div>
+        </div>
+    </div>
+    <footer id="footer" >
+        <div class="overlay"></div>
+        <div class="container">
+            <img src="Images/Logos/L4.png" width="200px" alt="img" />
+            <p class="we-are">we are social</p>
+            <a href="http://www.facebook.com/profile.php?id=100083304720753">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/y0ussef_ragheb1/">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/youssef-ragheb-356a422b9">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/YoussefRagheb16">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <p class="copyrights">
+                &copy; 2024 <span>Astro Phienox</span> All Right Reserved
+                <br />
+                Created and Developed in 4/10/2024 by <span>Our team:</span>
+                <br />
+            <p style="color: #fff;">
+                <span>Youssef Ragheb</span> |
+                <span>Youssef Hesham</span> |
+                <span>Menna Mohamed</span>|
+                <span>Mariam Gharib</span> |
+                <span>Mohamed Medhat</span> |
+                <span>Mohamed Mostafa</span>
+            </p>
+            </p>
+        </div>
+    </footer>
+    <script src="Kasper.js"></script>
+</body>
+
+</html>
